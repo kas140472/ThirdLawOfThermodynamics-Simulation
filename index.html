@@ -15,13 +15,14 @@
         var temp=0;
         var temps=0;
         var input;
+        var prev=temps;
 
         R=8.314;
         Na=6.022*10^23;
 
         var k=1;
         var ball=[];
-        var ballCount=1;
+        var ballCount=10;
         var dx=2+temps;
         var dy=-2+temps;
         for(var i=0;i<ballCount;i++){
@@ -85,12 +86,16 @@
         }
 
         function speed(input){
-            temps=input/1250;//*500;
-            for(var i=0;i<ballCount;i++){
-                ball[i].dx+=temps;//ball[i].x+ball[i].dx;
-                ball[i].dy+=temps;//ball[i].y+ball[i].dy;
-                //k=0;
+            temps=-2-input/125;//*500;
+            console.log("temps="+temps);
+            if(temps!=prev){
+                for(var i=0;i<ballCount;i++){
+                    ball[i].dx=temps;//ball[i].x+ball[i].dx;
+                    ball[i].dy=temps;//ball[i].y+ball[i].dy;
+                    //k=0;
+                }
             }
+            prev=temps;
             //dx=2+temps;
             //dy=-2+temps;
             // return new_value;
@@ -102,13 +107,13 @@
                 if(ball[i].x+ball[i].dx>530||ball[i].x+ball[i].dx<20)
                 {
                     console.log("hi");
-                    ball[i].dx=-ball[i].dx;
+                    ball[i].dx=-ball[i].dx+Math.random();
                     //ball[i].x=-ball[i].x;
                 }
                 if(ball[i].y+ball[i].dy>380||ball[i].y+ball[i].dy<20)
                 {
                     console.log("hi");
-                    ball[i].dy=-ball[i].dy;
+                    ball[i].dy=-ball[i].dy+Math.random();
                     //ball[i].y=-ball[i].y;
                 }
             }
@@ -255,7 +260,7 @@
     <div id="ctrltitle">CONTROLS</div>
     <!-- Region for User controls of simulation -->
     <div id="controls">
-        <img id="playpausebutton" onclick="simstate();" src="sins/blueplaydull.png" />
+        <img id="playpausebutton" onclick="simstate()" src="sins/blueplaydull.png" />
         <img id="rotationbutton" onclick="location.reload();" src="sins/bluecwdull.png" />
     </div>
     <!-- DND-Copyright display-->
