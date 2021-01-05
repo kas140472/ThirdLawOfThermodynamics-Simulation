@@ -98,35 +98,35 @@ canvas#simscreen
 div#commentboxleft
 {
 	border-top-style: dotted;
-	border-top-width: 2px;
+	border-top-width: 1px;
 	border-top-color: #f6ebed;
 	position:absolute;
 	left:28px;
 	top:505px;
 	height: 65px;
-	width: 280px;
+	width: 250px;
 	color: #e7722b;
 	text-align: left;
-	font-size: 14px;
+	font-size: 13.5px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 div#commentboxright
 {	
 	border-top-style: dotted;
-	border-top-width: 2px;
+	border-top-width: 1px;
 	border-top-color: #f6ebed;	
 	border-left-style: dotted;
-	border-left-width: 2px;
+	border-left-width: 1px;
 	border-left-color: #f6ebed;
 	position:absolute;
-	left:313px;
+	left:288px;
 	top: 505px;
 	height: 65px;
-	width: 280px;
+	width: 300px;
 	color: #e7722b;
 	text-align: left;
-	font-size: 14px;
+	font-size: 11px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
@@ -138,6 +138,7 @@ div#variables
 	top:120px;
 	height: 285px;
 	width: 175px;
+	line-height: 80%;
 }
 
 div#controls
@@ -155,17 +156,102 @@ input#l4spinner{
 
 #playpausebutton
 {
-	position: inherit;
+	position: absolute;
 	left: 45px;
-	top: 30px;
+	top: 50px;
 
+}
+
+/*.graph
+{
+	padding-top: 344px;
+	padding-left:250px;
+	position: inherit;
+	left: 313px;
+	top: 485px;
+}
+
+.state2
+{
+	padding-top: 200px;
+	padding-left:280px;
+	position: absolute;
+	left: 93px;
+	top: 60px;
+}
+
+.state22
+{
+	padding-top: 225px;
+	padding-left:280px;
+	position: absolute;
+	left: 113px;
+	top: 69px;
+}
+
+.state1
+{
+	padding-top: 210px;
+	padding-left:130px;
+	position: absolute;
+	left: 23px;
+	top: 60px;
+}
+
+.state11
+{
+	padding-top: 230px;
+	padding-left:130px;
+	position: absolute;
+	left: 38px;
+	top: 65px;
+}
+
+.state3
+{
+	padding-top: 280px;
+	padding-left:130px;
+	position: absolute;
+	left: 38px;
+	top: 140px;
+}*/
+
+#ball
+{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	padding-top: 210px;
+	padding-left:130px;
+}
+
+div#controls2
+{
+	position:absolute;
+	left:617px;
+	top:120px;
+	height: 140px;
+	width: 175px;
+	display: block;
+	line-height: 70%;
+}
+
+div#controls3
+{
+	position:absolute;
+	left:707px;
+	top:120px;
+	height: 140px;
+	width: 175px;
+	display: inline-block;
+	line-height: 70%;
 }
 
 #rotationbutton
 {
 	position: relative;
 	left: 110px;
-	top: 30px;
+	top: 50px;
 
 }
 
@@ -291,6 +377,36 @@ input#l4spinner{
 	position: absolute;
 	left: 250px; top:100px;
 }
+
+.tooltip {
+	position: absolute;
+	display: inline-block;
+	border-bottom: 0px dotted black;
+	font-family: Comic Sans MS;
+	font-size:14px;
+}
+
+.tooltip .tooltiptext {
+	font-family: Comic Sans MS;
+	font-size:12px;
+	visibility: hidden;
+	width: 100px;
+	background-color: black;
+	color: #fff;
+	border-radius: 6px;
+	padding: 10px 10px 10px 10px;
+
+	/* Position the tooltip */
+	position: absolute;
+	left: 0px;
+	top:25px;
+	z-index: 100;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
 
 /* Theme edited for Simulation UI */
 
