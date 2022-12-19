@@ -2,11 +2,11 @@
 
 <h5> About the Lab (Objective) : </h5>
 
-The main objective of this lab is to demonstrate the change in P-v graph of Stirling Cycle, as the pressure and volume variables change, as well as calculate and display the heat addition, heat rejection, net work output, and efficiency of the Stirling cycle.
+The main objective of this lab is to depict the third law of thermodynamics with the help of spheres (representing atoms) whose speed, which is a representation of their energy, changes with the temperature until the temperature becomes absolute zero.
 
 <h5> Links: </h5>
-Virtual Labs: https://solve-nitk.github.io/vlab-phase4-mechanical/thermodynamics/exp-stirling-cycle/
+Virtual Labs: https://solve-nitk.github.io/vlab-phase4-mechanical/thermodynamics/exp-third-law-of-thermodynamics/
 <br>
-Direct Simulation Link (Github): https://kas140472.github.io/StirlingCycle-Simulation/
+Direct Simulation Link (Github): https://kas140472.github.io/ThirdLawOfThermodynamics-Simulation/
 <br><br>
 Refer to 'Documentation' folder for documentation details.
